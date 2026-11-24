@@ -1,30 +1,30 @@
 # Swedish Electricity Price & Usage Logger
 
-Applikation och databaslösning för att logga och analysera elpriser (öre/kWh) och elförbrukning (kWh) i Sveriges elområden (SE1–SE4).
+An application and database solution for logging and analyzing regional electricity prices (öre/kWh) and consumption (kWh) across Swedish bidding zones (SE1-SE4).
 
-## Syfte och målgrupp
-* Syfte: Samla in och jämföra regionala elpriser mellan norra och södra Sverige (Luleå SE1, Stockholm SE3, Göteborg SE3 och Malmö SE4) samt koppla förbrukningen till olika hushållsapparater.
-* Målgrupp: Energianalytiker, smart-home-användare och hushåll som vill få bättre koll på sina elkostnader.
+## Purpose & Target Audience
+* Purpose: Collect and compare regional electricity prices between northern and southern Sweden (Luleå SE1, Stockholm SE3, Göteborg SE3, and Malmö SE4) and link usage to specific household appliances.
+* Target Audience: Energy analysts, smart-home users, and households looking to track and optimize electricity costs.
 
-## Teknisk stack
-* Språk: Python 3.10+ (standardbiblioteken random och datetime)
-* Databas: MySQL (Fas 2)
-* Container och moln: Docker, GitHub Actions, Azure (Fas 3–6)
+## Tech Stack
+* Language: Python 3.10+ (standard libraries `random` and `datetime`)
+* Database: MySQL (Phase 2)
+* Containers & Cloud: Docker, GitHub Actions, Azure (Phases 3-6)
 
-## Kom igång
-1. Gå in i src-mappen:
+## Getting Started
+1. Navigate to the `src` directory:
    ```bash
    cd src
    ```
-2. Kör skriptet:
+2. Run the logger script:
    ```bash
    python energy_logger.py
    ```
 
-## Projektstatus
-- [x] Fas 1: Python Core Logger (SE1–SE4 pris- och förbrukningssimulering)
-- [ ] Fas 2: MySQL-databas, ER-diagram, vyer och Python-koppling
-- [ ] Fas 3: Docker och Docker Compose
-- [ ] Fas 4: CI/CD med GitHub Actions och Azure
-- [ ] Fas 5: Enhetstester (unittest)
-- [ ] Fas 6: Nätverkssäkerhet (VNet, NSG och DNS)
+## Project Roadmap
+- [x] Phase 1: Python Core Logger (SE1-SE4 price and usage simulation)
+- [ ] Phase 2: MySQL database, ER diagram, views, and Python integration
+- [ ] Phase 3: Docker and Docker Compose setup
+- [ ] Phase 4: CI/CD pipeline with GitHub Actions and Azure
+- [ ] Phase 5: Automated unit tests (`unittest`)
+- [ ] Phase 6: Network security (VNet, NSG, and DNS)
